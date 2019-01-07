@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Step 1</title>
+  <style>
+    .container{max-width: 1024px;margin: auto;}
+    /* анимация для swup */
+    .transition-fade {transition: .4s;opacity: 1;}
+    html.is-animating .transition-fade{opacity: 0; transform: translateY(50px);}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>ШАПКА ОСТАЁТСЯ, остальное меняется</h1>
+    </header>
+    <main id="swup" class="transition-fade">
+      <article>
+        <h1>Заголовок</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vero nam inventore dicta corrupti, at commodi perferendis laborum perspiciatis voluptatum dolorem amet quam iure mollitia maxime labore eius maiores similique provident, ipsam sed! Quasi illum aliquam iusto incidunt deserunt consequuntur aperiam quaerat, saepe vero, voluptas sequi veniam asperiores unde natus? Cupiditate officiis dignissimos aut dicta aperiam id, maxime perferendis nisi!</p>
+        <a href="/step2.html">
+          Вторая страница
+        </a>
+      </article>
+    </main>
+  </div>
+  
+  <script src="swup.min.js"></script>
+  <script>
+    const swup = new Swup();
+  </script>
+</body>
+</html>
